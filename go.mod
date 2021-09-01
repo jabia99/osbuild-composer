@@ -16,8 +16,8 @@ require (
 	github.com/aws/aws-sdk-go v1.27.0
 	github.com/coreos/go-semver v0.3.0
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f
-	github.com/deepmap/oapi-codegen v1.3.12
-	github.com/getkin/kin-openapi v0.13.0
+	github.com/deepmap/oapi-codegen v1.8.2
+	github.com/getkin/kin-openapi v0.61.0
 	github.com/gobwas/glob v0.2.3
 	github.com/golang/protobuf v1.4.3
 	github.com/google/go-cmp v0.5.4
@@ -27,7 +27,7 @@ require (
 	github.com/jackc/pgx/v4 v4.11.0
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/kolo/xmlrpc v0.0.0-20200310150728-e0350524596b
-	github.com/labstack/echo/v4 v4.1.11
+	github.com/labstack/echo/v4 v4.2.1
 	github.com/prometheus/client_golang v1.10.0
 	github.com/stretchr/testify v1.5.1
 	github.com/ubccr/kerby v0.0.0-20170626144437-201a958fc453
