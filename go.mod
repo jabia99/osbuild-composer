@@ -3,8 +3,8 @@ module github.com/osbuild/osbuild-composer
 go 1.15
 
 require (
-	cloud.google.com/go v0.75.0
-	cloud.google.com/go/storage v1.10.0
+	cloud.google.com/go/cloudbuild v1.2.0
+	cloud.google.com/go/storage v1.23.0
 	github.com/Azure/azure-pipeline-go v0.2.3
 	github.com/Azure/azure-sdk-for-go v41.3.0+incompatible
 	github.com/Azure/azure-storage-blob-go v0.13.0
@@ -19,9 +19,9 @@ require (
 	github.com/deepmap/oapi-codegen v1.3.12
 	github.com/getkin/kin-openapi v0.13.0
 	github.com/gobwas/glob v0.2.3
-	github.com/golang/protobuf v1.4.3
-	github.com/google/go-cmp v0.5.4
-	github.com/google/uuid v1.1.2
+	github.com/golang/protobuf v1.5.2
+	github.com/google/go-cmp v0.5.9
+	github.com/google/uuid v1.3.0
 	github.com/gophercloud/gophercloud v0.11.0
 	github.com/jackc/pgtype v1.7.0
 	github.com/jackc/pgx/v4 v4.11.0
@@ -29,14 +29,13 @@ require (
 	github.com/kolo/xmlrpc v0.0.0-20200310150728-e0350524596b
 	github.com/labstack/echo/v4 v4.1.11
 	github.com/prometheus/client_golang v1.10.0
-	github.com/stretchr/testify v1.5.1
+	github.com/stretchr/testify v1.7.0
 	github.com/ubccr/kerby v0.0.0-20170626144437-201a958fc453
 	github.com/vmware/govmomi v0.23.0
-	golang.org/x/net v0.0.0-20210614182718-04defd469f4e // indirect
-	golang.org/x/oauth2 v0.0.0-20201208152858-08078c50e5b5
-	golang.org/x/sys v0.0.0-20210423082822-04245dca01da
-	google.golang.org/api v0.36.0
-	google.golang.org/genproto v0.0.0-20210108203827-ffc7fda8c3d7
-	google.golang.org/protobuf v1.25.0
+	golang.org/x/oauth2 v0.0.0-20221006150949-b44042a4b9c1
+	golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10
+	google.golang.org/api v0.99.0
+	google.golang.org/genproto v0.0.0-20221010155953-15ba04fc1c0e
+	google.golang.org/protobuf v1.28.1
 	gopkg.in/ini.v1 v1.62.0
 )
