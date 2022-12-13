@@ -125,6 +125,8 @@ github.com/deepmap/oapi-codegen/pkg/util
 github.com/dgrijalva/jwt-go
 # github.com/dimchansky/utfbom v1.1.0
 github.com/dimchansky/utfbom
+# github.com/dougm/pretty v0.0.0-20171025230240-2ee9d7453c02
+github.com/dougm/pretty
 # github.com/getkin/kin-openapi v0.13.0
 ## explicit
 github.com/getkin/kin-openapi/jsoninfo
@@ -159,7 +161,7 @@ github.com/google/go-cmp/cmp/internal/diff
 github.com/google/go-cmp/cmp/internal/flags
 github.com/google/go-cmp/cmp/internal/function
 github.com/google/go-cmp/cmp/internal/value
-# github.com/google/uuid v1.1.2
+# github.com/google/uuid v1.3.0
 ## explicit
 github.com/google/uuid
 # github.com/googleapis/gax-go/v2 v2.0.5
@@ -215,9 +217,7 @@ github.com/julienschmidt/httprouter
 # github.com/kolo/xmlrpc v0.0.0-20200310150728-e0350524596b
 ## explicit
 github.com/kolo/xmlrpc
-# github.com/kr/pretty v0.1.0
-github.com/kr/pretty
-# github.com/kr/text v0.1.0
+# github.com/kr/text v0.2.0
 github.com/kr/text
 # github.com/labstack/echo/v4 v4.1.11
 ## explicit
@@ -268,8 +268,11 @@ github.com/ubccr/kerby/khttp
 github.com/valyala/bytebufferpool
 # github.com/valyala/fasttemplate v1.1.0
 github.com/valyala/fasttemplate
-# github.com/vmware/govmomi v0.23.0
+# github.com/vmware/govmomi v0.30.0
 ## explicit
+github.com/vmware/govmomi/cns
+github.com/vmware/govmomi/cns/methods
+github.com/vmware/govmomi/cns/types
 github.com/vmware/govmomi/find
 github.com/vmware/govmomi/govc/cli
 github.com/vmware/govmomi/govc/datastore
@@ -280,11 +283,16 @@ github.com/vmware/govmomi/govc/vm
 github.com/vmware/govmomi/govc/vm/guest
 github.com/vmware/govmomi/guest
 github.com/vmware/govmomi/guest/toolbox
+github.com/vmware/govmomi/history
 github.com/vmware/govmomi/internal
+github.com/vmware/govmomi/internal/version
 github.com/vmware/govmomi/list
 github.com/vmware/govmomi/nfc
 github.com/vmware/govmomi/object
 github.com/vmware/govmomi/ovf
+github.com/vmware/govmomi/pbm
+github.com/vmware/govmomi/pbm/methods
+github.com/vmware/govmomi/pbm/types
 github.com/vmware/govmomi/property
 github.com/vmware/govmomi/session
 github.com/vmware/govmomi/session/cache
@@ -305,6 +313,7 @@ github.com/vmware/govmomi/vim25/soap
 github.com/vmware/govmomi/vim25/types
 github.com/vmware/govmomi/vim25/xml
 github.com/vmware/govmomi/vmdk
+github.com/vmware/govmomi/vsan/vsanfs/types
 # go.opencensus.io v0.22.5
 go.opencensus.io
 go.opencensus.io/internal
