@@ -56,11 +56,11 @@ func (r *Response) WriteHeader(code int) {
 		r.echo.Logger.Warn("response already committed")
 		return
 	}
+	r.Status = code
 	for _, fn := range r.beforeFuncs {
 		fn()
 	}
-	r.Status = code
-	r.Writer.WriteHeader(code)
+	r.Writer.WriteHeader(r.Status)
 	r.Committed = true
 }
 
@@ -92,6 +92,13 @@ func (r *Response) Flush() {
 // See [http.Hijacker](https://golang.org/pkg/net/http/#Hijacker)
 func (r *Response) Hijack() (net.Conn, *bufio.ReadWriter, error) {
 	return r.Writer.(http.Hijacker).Hijack()
+}
+
+// Unwrap returns the original http.ResponseWriter.
+// ResponseController can be used to access the original http.ResponseWriter.
+// See [https://go.dev/blog/go1.20]
+func (r *Response) Unwrap() http.ResponseWriter {
+	return r.Writer
 }
 
 func (r *Response) reset(w http.ResponseWriter) {
