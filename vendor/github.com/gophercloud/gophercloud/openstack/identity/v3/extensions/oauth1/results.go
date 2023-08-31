@@ -52,6 +52,10 @@ type GetConsumerResult struct {
 
 // IsEmpty determines whether or not a page of Consumers contains any results.
 func (c ConsumersPage) IsEmpty() (bool, error) {
+	if c.StatusCode == 204 {
+		return true, nil
+	}
+
 	consumers, err := ExtractConsumers(c)
 	return len(consumers) == 0, err
 }
@@ -96,8 +100,8 @@ type Token struct {
 	OAuthToken string `q:"oauth_token"`
 	// OAuthTokenSecret is the secret value associated with the OAuth Token.
 	OAuthTokenSecret string `q:"oauth_token_secret"`
-	// OAUthExpiresAt is the date and time when an OAuth token expires.
-	OAUthExpiresAt *time.Time `q:"-"`
+	// OAuthExpiresAt is the date and time when an OAuth token expires.
+	OAuthExpiresAt *time.Time `q:"-"`
 }
 
 // TokenResult is a struct to handle
@@ -127,7 +131,7 @@ func (r TokenResult) Extract() (*Token, error) {
 		if t, err := time.Parse(gophercloud.RFC3339Milli, v); err != nil {
 			return nil, err
 		} else {
-			token.OAUthExpiresAt = &t
+			token.OAuthExpiresAt = &t
 		}
 	}
 
@@ -208,6 +212,10 @@ type AccessTokensPage struct {
 
 // IsEmpty determines whether or not a an AccessTokensPage contains any results.
 func (r AccessTokensPage) IsEmpty() (bool, error) {
+	if r.StatusCode == 204 {
+		return true, nil
+	}
+
 	accessTokens, err := ExtractAccessTokens(r)
 	return len(accessTokens) == 0, err
 }
@@ -251,6 +259,10 @@ type AccessTokenRolesPage struct {
 
 // IsEmpty determines whether or not a an AccessTokensPage contains any results.
 func (r AccessTokenRolesPage) IsEmpty() (bool, error) {
+	if r.StatusCode == 204 {
+		return true, nil
+	}
+
 	accessTokenRoles, err := ExtractAccessTokenRoles(r)
 	return len(accessTokenRoles) == 0, err
 }
