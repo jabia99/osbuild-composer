@@ -34,7 +34,7 @@ require (
 	github.com/vmware/govmomi v0.23.0
 	golang.org/x/net v0.0.0-20210614182718-04defd469f4e // indirect
 	golang.org/x/oauth2 v0.0.0-20201208152858-08078c50e5b5
-	golang.org/x/sys v0.0.0-20210423082822-04245dca01da
+	golang.org/x/sys v0.12.0
 	google.golang.org/api v0.36.0
 	google.golang.org/genproto v0.0.0-20210108203827-ffc7fda8c3d7
 	google.golang.org/protobuf v1.25.0
